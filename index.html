@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kélcio Mykelf</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="android-chrome-192x192.png" alt="Minha Logo">
+        </div>
+        <ul>
+            <li><a target="blank" href="https://github.com/kelciomykelf/">github</a></li>
+            <li><a target="blank" href="mailto:kelciomykelf@gmail.com">email</a></li>
+            <li><a target="blank" href="https://wa.me/81991907187">whatsapp</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Kélcio Mykelf</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout ()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display: none" id="about">
+                <p>Olá, me chamo Kélcio Mykelf, tenho 22 anos, apaixonado por gatos e passeio sobre alguns jogos onlines, estou começando na área de Front-End.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout () {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
